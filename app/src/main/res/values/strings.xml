@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hort</string>
+    <string name="tutorial">Pular Tutorial</string>
+    <string name="tutorial1">Aqui você pode explorar. Escolha "Descubra" e veja todos os produtos. Toque em um para descobrir mais, como de onde vem e o que faz bem para você</string>
+    <string name="tutorial2">Hora de cozinhar! Selecione "Prepare" para encontrar receitas deliciosas com os produtos que você descobriu. Siga as receitas e faça pratos incríveis em casa.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
