@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Hort</string>
     <string name="tutorial">Pular Tutorial</string>
+    <string name="receitaPreparo">Descasque e rale as cenouras.Em uma tigela, misture farinha de trigo, açúcar, fermento, sal e canela.Adicione as cenouras raladas, óleo e ovos à mistura seca. Misture bem.Despeje a massa em uma forma untada e asse em forno preaquecido a 180°C por cerca de 35-40 minutos.Enquanto o bolo assa, prepare a cobertura de chocolate derretendo chocolate e creme de leite em banho-maria.Depois que o bolo esfriar, cubra com a cobertura de chocolate.</string>
+    <string name="receitaIngredientes">Cenoura, Farilha, Ovos, Manteiga, Chocolate meio amargo</string>
+    <string name="plantaDescricao">O morango é uma fruta deliciosa e popular conhecida por sua cor vermelha vibrante, sabor doce e aroma característico. Além de ser um alimento saboroso, o morango também oferece diversos benefícios à saúde devido ao seu conteúdo nutricional e fitoquímicos.</string>
     <string name="tutorial1">Aqui você pode explorar. Escolha "Descubra" e veja todos os produtos. Toque em um para descobrir mais, como de onde vem e o que faz bem para você</string>
     <string name="tutorial2">Hora de cozinhar! Selecione "Prepare" para encontrar receitas deliciosas com os produtos que você descobriu. Siga as receitas e faça pratos incríveis em casa.</string>
     <!-- TODO: Remove or change this placeholder text -->

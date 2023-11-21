@@ -3,9 +3,7 @@ package enzo.tavares.hort
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import enzo.tavares.hort.databinding.ActivityHomeBinding
-import enzo.tavares.hort.wizzard.wizard1
 
 class HomeActivity : AppCompatActivity() {
 
@@ -17,7 +15,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.receitas.setOnClickListener {
-            val receitas = Intent(this, receitaView::class.java)
+            val receitas = Intent(this, ReceitaView::class.java)
             startActivity(receitas)
         }
 

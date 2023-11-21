@@ -6,7 +6,7 @@ import enzo.tavares.hort.Model.Planta
 
 interface ServicoPlanta {
 
-    @GET("alimentos")
+    @GET("alimentosmobile")
     fun getAllAlimentos(): Call<List<Planta>>
 
 }

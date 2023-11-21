@@ -1,6 +1,7 @@
 package enzo.tavares.hort
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -17,9 +18,7 @@ import retrofit2.Response
 
 class PlantioView : AppCompatActivity() {
 
-
-
-    private  lateinit var binding: ActivityPlantioViewBinding
+    private lateinit var binding: ActivityPlantioViewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,8 +56,8 @@ class PlantioView : AppCompatActivity() {
                 // Trate erros de rede ou qualquer outro erro ao fazer a chamada HTTP
                 Log.e("retrofit", "onFailure: ",t )
             }
-        })
 
+        })
 
     }
 
@@ -75,6 +74,8 @@ class PlantioView : AppCompatActivity() {
                     {
                         val adapter:AdapterPlanta= AdapterPlanta(this@PlantioView, response.body()!!)
                         RecyclerPlanta.adapter = adapter
+
+
                     }
                 }
                 else
@@ -96,5 +97,31 @@ class PlantioView : AppCompatActivity() {
 
         binding.plantioCategoria.setText(filtro)
     }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        var RecyclerPlanta = binding.recyclerView
+        val adapter:AdapterPlanta = RecyclerPlanta.adapter as AdapterPlanta
+        val posicao:Int = adapter.posicaoClicada
+        var planta:Planta? = null
+        if (posicao >=0)
+        {
+            planta = adapter.listaPlanta.get(posicao)
+        }
+
+
+        if(item.itemId==R.id.menuPlantioAbri)
+        {
+            if (planta!=null)
+            {
+                val intent:Intent = Intent(this, PlantaExibe::class.java)
+                intent.putExtra("planta",planta)
+                startActivity(intent)
+            }
+        }
+
+
+        return true
+    }
+
 
 }

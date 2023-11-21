@@ -29,7 +29,7 @@
                 android:id="@+id/imageReceita"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-
+                android:background="@color/verde"
                 />
 
         </androidx.cardview.widget.CardView>
@@ -42,6 +42,7 @@
             android:layout_marginLeft="16dp"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:textColor="@color/verde"
             app:layout_constraintEnd_toStartOf="@+id/cardView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/cardView" />
